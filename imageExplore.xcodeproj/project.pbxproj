@@ -13,6 +13,7 @@
 		1C64B4951C9AFA2600ADB40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C64B4931C9AFA2600ADB40E /* Main.storyboard */; };
 		1C64B4971C9AFA2600ADB40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C64B4961C9AFA2600ADB40E /* Assets.xcassets */; };
 		1C64B49A1C9AFA2600ADB40E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C64B4981C9AFA2600ADB40E /* LaunchScreen.storyboard */; };
+		7E3D09951CA2BAE600588968 /* imageDesc.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3D09941CA2BAE600588968 /* imageDesc.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1C64B4961C9AFA2600ADB40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C64B4991C9AFA2600ADB40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C64B49B1C9AFA2600ADB40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3D09941CA2BAE600588968 /* imageDesc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageDesc.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		1C64B48A1C9AFA2600ADB40E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E3D09941CA2BAE600588968 /* imageDesc.plist */,
 				1C64B48B1C9AFA2600ADB40E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +143,7 @@
 				1C64B49A1C9AFA2600ADB40E /* LaunchScreen.storyboard in Resources */,
 				1C64B4971C9AFA2600ADB40E /* Assets.xcassets in Resources */,
 				1C64B4951C9AFA2600ADB40E /* Main.storyboard in Resources */,
+				7E3D09951CA2BAE600588968 /* imageDesc.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				1C64B4A01C9AFA2600ADB40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

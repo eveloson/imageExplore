@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController (){
-    NSMutableArray * _images;
+    NSArray *_allDesc;
 }
 
 @end
@@ -19,10 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _images = [NSMutableArray arrayWithCapacity:100];
+//    _images = [NSMutableArray arrayWithCapacity:100];
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path = [bundle pathForResource:@"imageDesc" ofType:@"plist"];
+    _allDesc = [NSArray arrayWithContentsOfFile:path];
     //设置默认图片
-    self.image.image = [UIImage imageNamed:@"1"];
-
+    _imageDes.text = _allDesc[0];
 }
 
 -(UIImage *) chooseImageByNo:(int)no {
@@ -67,7 +69,15 @@
     [UIView commitAnimations];
 }
 - (IBAction)imageChoose:(UISlider *)sender {
+    //1.设置图片序号
+    self.imageNum.text = [NSString stringWithFormat:@"%.f/10",sender.value];
+    //2.设置图片
     self.image.image = [UIImage imageNamed:[NSString stringWithFormat:@"%.f",sender.value]];
+    //3.设置图片描述
+
+    self.imageDes.text = _allDesc[(int)(sender.value-0.5)];
+    
+    
 }
 
 - (IBAction)nightMode:(UISwitch *)sender {
